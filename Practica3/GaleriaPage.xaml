@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Practica3.GaleriaPage"
+             Title="Galería">
+
+    <ScrollView>
+        <VerticalStackLayout Padding="30" Spacing="40">
+
+            <StackLayout x:Name="animalStack">
+                <!-- Los botones de los animales seleccionados aparecerán aquí -->
+            </StackLayout>
+
+        </VerticalStackLayout>
+    </ScrollView>
+</ContentPage>

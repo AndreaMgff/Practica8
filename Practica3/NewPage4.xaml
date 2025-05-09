@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Practica3.NewPage4"
+             Title="¡Dragones!">
+    
+    <VerticalStackLayout
+        Padding="30,10"
+        Spacing="25">
+        <Label 
+            Text="Los dragones han sido parte de la mitología y la cultura de muchas civilizaciones a lo largo de la historia."
+            VerticalOptions="Center" 
+            HorizontalOptions="Center" 
+            TextColor="White"
+            FontSize="18"
+            HorizontalTextAlignment="Center"/>
+        <Grid ColumnDefinitions="*,*" RowDefinitions="*" Padding="10" Margin="0,10,0,0">
+            <Image Grid.Row="0" Grid.Column="0" Source="dragon6.jpg" Aspect="AspectFill"/>
+            <Image Grid.Row="0" Grid.Column="1" Source="dragon4.jpg" Aspect="AspectFill"/>
+        </Grid>
+        <Label 
+            Text="El dragón, uno de los más conocidos seres mitológicos, ha sido inspiración de diferentes relatos y poemas, algunos de los cuales han sido llevados al cine. La primera aparición de los dragones fueron unos amuletos de jade de la cultura Hongshan, en China, hace aproximadamente entre 6700 y 4900 años"
+            VerticalOptions="Center" 
+            HorizontalOptions="Center" 
+            TextColor="White"
+            FontSize="16"
+            HorizontalTextAlignment="Center"/>
+        <Button 
+            Text="Saber más sobre Dragones"
+            Clicked="DetallesBTN"
+            x:Name="btnLBL"
+            BackgroundColor="Purple"
+            TextColor="White"
+            CornerRadius="10"/>
+    </VerticalStackLayout>
+</ContentPage>

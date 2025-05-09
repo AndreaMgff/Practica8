@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Practica3.NewPage1"
+             Title="Unicornios">
+    
+    
+
+    <VerticalStackLayout 
+        Padding="30,10"
+        Spacing="25">
+        <Label 
+            Text="Un animal mitológico con un pasado fascinante"
+            VerticalOptions="Center" 
+            FontSize="18"
+            TextColor="White"
+            HorizontalOptions="Center" />
+        <Grid ColumnDefinitions="*,*" RowDefinitions="*" Padding="10" Margin="0,10,0,0">
+            <Image Grid.Row="0" Grid.Column="0" Source="unicornio1.jpg" Aspect="AspectFill"/>
+            <Image Grid.Row="0" Grid.Column="1" Source="unicornio2.jpg" Aspect="AspectFill"/>
+        </Grid>
+        <Label 
+            Text="Criatura mitológica del folclore europeo representada habitualmente como un caballo blanco con patas de antílope, ojos y pelo de cabra y un cuerno en la frente. En las representaciones modernas, sin embargo, es idéntico a un caballo, diferenciándose únicamente en la existencia del cuerno."
+            VerticalOptions="Center" 
+            HorizontalOptions="Center" 
+            TextColor="White"
+            FontSize="16"
+            HorizontalTextAlignment="Center"/>
+        <Button 
+            Text="Información de los Unicornios"
+                Clicked="DetallesBTN"
+                BackgroundColor="OrangeRed"
+            x:Name="btnLBL"
+        />
+    </VerticalStackLayout>
+</ContentPage>

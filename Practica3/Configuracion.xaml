@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Practica3.Configuracion"
+             Title="Configuracion">
+    <VerticalStackLayout Padding="30" Spacing="25">
+        <Label 
+            Text="Configuración"
+            VerticalOptions="Center" 
+            FontSize="28"
+            FontAttributes="Bold"
+            HorizontalOptions="Center"
+            TextColor="DarkSlateBlue"/>
+
+        <Frame CornerRadius="15" Padding="20" BackgroundColor="#F0F0F0" HasShadow="True">
+            <VerticalStackLayout Spacing="15">
+
+                <Label Text="Cambiar color de fondo:"
+                           FontSize="18"
+                           FontAttributes="Bold"
+                           TextColor="Black"
+                           HorizontalOptions="Center" />
+
+                <Button Text="Fondo Negro"
+                            Clicked="OnFondoNegroClicked"
+                            BackgroundColor="Black"
+                            TextColor="White"
+                            CornerRadius="10" />
+
+                <Button Text="Fondo Gris"
+                            Clicked="OnFondoGrisClicked"
+                            BackgroundColor="Gray"
+                            TextColor="White"
+                            CornerRadius="10" />
+
+            </VerticalStackLayout>
+        </Frame>
+        <Label HeightRequest="20" />
+        <Frame CornerRadius="15" Padding="20" BackgroundColor="#F0F0F0" HasShadow="True">
+            <VerticalStackLayout Spacing="15">
+
+                <Label Text="Elimina las galerías personalizadas:"
+                   FontSize="18"
+                   FontAttributes="Bold"
+                   TextColor="Black"
+                   HorizontalOptions="Center" />
+                <Button Text="Borrar Galerías"
+                    Clicked="OnBorrarGaleriasClicked"
+                    BackgroundColor="DarkSlateBlue"
+                     TextColor="White"
+                    CornerRadius="10" />
+            </VerticalStackLayout>
+        </Frame>
+        
+    </VerticalStackLayout>
+</ContentPage>

@@ -1,0 +1,57 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Practica3.ControlPage">
+    <ContentPage.Background>
+        <LinearGradientBrush>
+            <GradientStop Color="Black" Offset="0.0"/>
+            <GradientStop Color="Black" Offset="1.0"/>
+        </LinearGradientBrush>
+    </ContentPage.Background>
+    <ScrollView>
+        <VerticalStackLayout
+            Padding="30,0"
+            Spacing="25">
+            <Image
+                Source="dotnet_bot"
+                HeightRequest="385"
+                Aspect="AspectFit"
+                SemanticProperties.Description="dot net bot in a race car number eight" />
+
+            <Label
+                Text="¡Animales Mitológicos!"
+                TextColor="White"
+                Style="{StaticResource Headline}"
+                SemanticProperties.HeadingLevel="Level1" />
+
+            <Label
+                Text="Iniciar Sesión"
+                Style="{StaticResource SubHeadline}"
+                TextColor="White"
+                SemanticProperties.HeadingLevel="Level2"
+                SemanticProperties.Description="Welcome to dot net Multi platform App U I" />
+            <Entry 
+                x:Name="entryUsername" 
+                Placeholder="Nombre de usuario" 
+                TextColor="White"/>
+            <Entry 
+                x:Name="entryPassword" 
+                Placeholder="Contraseña" 
+                IsPassword="True" 
+                TextColor="White"/>
+
+            <Button
+                x:Name="loginButton"
+                Text="Iniciar sesión" 
+                Clicked="OnLoginClicked"
+                HorizontalOptions="Fill" />
+            
+            <Button
+                x:Name="HuellaBtn"
+                Text="Huella" 
+                Clicked="ClickedHuella"
+                HorizontalOptions="Fill" />
+
+        </VerticalStackLayout>
+    </ScrollView>
+</ContentPage>

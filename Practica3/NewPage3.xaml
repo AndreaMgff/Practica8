@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Practica3.NewPage3"
+             Title="Fénix">
+    
+    <VerticalStackLayout
+        Padding="30,10"
+        Spacing="25">
+        <Label 
+            Text="Descubre la historia del Fénix y su sorprendente equivalente en el mundo animal."
+                VerticalOptions="Center" 
+            HorizontalOptions="Center" 
+            TextColor="White"
+            FontSize="18"
+            HorizontalTextAlignment="Center"/>
+        <Grid ColumnDefinitions="*,*" RowDefinitions="*" Padding="10" Margin="0,10,0,0">
+            <Image Grid.Row="0" Grid.Column="0" Source="fenix1.jpg" Aspect="AspectFill"/>
+            <Image Grid.Row="0" Grid.Column="1" Source="fenix2.jpg" Aspect="AspectFill"/>
+        </Grid>
+        <Label 
+            Text="En el registro histórico, el fénix «podría simbolizar la renovación en general, así como el sol, el tiempo, el Imperio, metempsicosis, consagración, resurrección, la vida en el Paraíso, Cristo, María, virginidad celestial, el hombre excepcional y ciertos aspectos de la vida cristiana»"
+            VerticalOptions="Center" 
+            HorizontalOptions="Center" 
+            TextColor="White"
+            FontSize="16"
+            HorizontalTextAlignment="Center"/>
+        <Button 
+             Text="Saber más sobre Fenrir"
+            Clicked="DetallesBTN"
+            x:Name="btnLBL"
+         BackgroundColor="Purple"
+            TextColor="White"
+            CornerRadius="10"/>
+    </VerticalStackLayout>
+</ContentPage>

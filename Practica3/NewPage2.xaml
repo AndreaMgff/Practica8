@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Practica3.NewPage2"
+             Title="Fenrir">
+   
+    <VerticalStackLayout 
+        Padding="30,10"
+        Spacing="25">
+        <Label 
+            Text="Fenrir, el lobo que desafió a los dioses nórdicos"
+            VerticalOptions="Center" 
+            FontSize="18"
+            TextColor="White"
+            HorizontalOptions="Center"
+            />
+        <Grid ColumnDefinitions="*,*" RowDefinitions="*" Padding="10" Margin="0,10,0,0">
+            <Image Grid.Row="0" Grid.Column="0" Source="fenrir1.jpg" Aspect="AspectFill"/>
+            <Image Grid.Row="0" Grid.Column="1" Source="fenrir2.jpg" Aspect="AspectFill"/>
+        </Grid>
+        <Label 
+            Text="Fenrir es un lobo gigante y feroz que desempeña un papel crucial en el Ragnarök, el fin del mundo en la mitología nórdica. Según la profecía, Fenrir se liberará y desencadenará el caos en el mundo."
+            VerticalOptions="Center" 
+            HorizontalOptions="Center" 
+            TextColor="White"
+                FontSize="16"
+            HorizontalTextAlignment="Center"/>
+        <Button Text="Saber más sobre Fenrir"
+           Clicked="DetallesBTN"
+                x:Name="btnLBL"
+        />
+    </VerticalStackLayout>
+</ContentPage>
